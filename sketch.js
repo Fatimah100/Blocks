@@ -22,7 +22,7 @@ function setup() {
     isStatic:true
   };
   
-  ground=Bodies.rectangle(100,300,400,20);
+  ground=Bodies.rectangle(100,300,400,20,ground_option);
   World.add(world,ground);
   box1 = new Box(200,200,50,50);
   
@@ -33,7 +33,7 @@ function setup() {
 function mousePressed(){
   boxes.push(
     
-    new Box(50,50,mouseX,mouseY)
+    new Box(mouseX,mouseY,50,50)
     
     )
 }
